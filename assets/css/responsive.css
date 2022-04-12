@@ -1,0 +1,8 @@
+@media (max-width: 991px) {
+  .navbar .nav-link.active::after {
+    display: none;
+  }
+  .navbar-nav {
+    /* padding-bottom: 1rem; */
+  }
+}
