@@ -24,7 +24,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light navbar-sticky">
+      <nav class="navbar navbar-expand-lg navbar-light sticky-top ">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="assets/images/logo.svg" />
@@ -75,15 +75,11 @@
     <!-- CATALOGO -->
     <section class="catalogo py-5">
       <div class="container">
-        <div class="d-lg-flex align-items-center justify-content-center text-center">
-          <h2 class="text-center pe-lg-5 pb-lg-0 pb-5">Scarica il nostro <span class="text-green"> catalogo</span></h2>
-          <div class="d-inline-block position-relative text-start">
+        <div class="d-flex flex-wrap align-items-center justify-content-center text-center">
+          <h2 class="pe-lg-5 pb-lg-0 pb-5">Scarica il nostro <span class="text-green"> catalogo</span></h2>
+          <div class="d-inline-block position-relative">
+            <a href="#" class="btn btn-success btn-catalogo"><i class="fa-solid fa-download fa-2xl pe-2"></i>Scarica</a>
             <img class="img-fluid" src="assets/images/catalogo_section_white.jpg" />
-            <a
-              href="#"
-              class="btn btn-success position-absolute top-0 start-50 translate-middle d-flex align-items-center"
-              ><i class="fa-solid fa-download fa-2xl pe-2"></i>Scarica</a
-            >
           </div>
         </div>
       </div>
@@ -95,13 +91,14 @@
         <div class="row align-items-center">
           <div class="col-lg-6 text-center align-middle order-1 order-lg-0">
             <img src="assets/images/storie.jpg" class="img-fluid" />
+            <br />
             <a href="#contattaci" class="btn btn-danger mt-3 fs-4">
               <i class="fa-regular fa-play-circle pe-3 fa-xl"></i>Tg2 Storie</a
             >
           </div>
           <div class="col-lg-6">
             <h2>Chi siamo</h2>
-            <p class="lea">
+            <p >
               <strong> Mondo Scuola Lavoro</strong> da anni si propone come trait d’union tra il
               <strong>"mondo scolastico"</strong> ed il <strong>"mondo aziendale"</strong>. In partnership con aziende
               di vari settori si occupa nello specifico di contattare gli istituti scolastici, pubblici e privati, gli
@@ -109,7 +106,7 @@
               aziendali nazionali ed esteri, percorsi di ASL, (in azienda o c/o le scuole), progetti Erasmus, oltre che
               della formazione tecnica dei docenti.
             </p>
-            <p class="lea">
+            <p >
               Gli stage si avvalgono del supporto di nostri <strong>Tutors specializzat</strong>i e dell’utilizzo di
               soluzioni didattiche nell’ambito della gestione dell’energia e dell’automazione industriale e degli
               edifici. Le soluzioni didattiche utilizzate per gli stage sono progettate e realizzate su misura per le
@@ -126,7 +123,7 @@
     <section id="formazione" class="py-5">
       <div class="container py-5">
         <div class="row">
-          <div class="col-lg-9 text-center offset-lg-2">
+          <div class="col-lg-9 text-center mx-auto">
             <h2>Formazione</h2>
             <p class="">
               <strong> Mondo Scuola Lavoro</strong> in collaborazione con i suoi <a href="#partner">partner</a> opera,
@@ -138,7 +135,7 @@
         </div>
         <div class="row g-4 mt-2">
           <div class="col-lg-4">
-            <div class="card d-flex flex-row">
+            <div class="card cardH d-flex flex-row">
               <div><img src="assets/images/icon_boxformH.svg" /></div>
               <div class="card-body">
                 <div class="card-title">
@@ -154,7 +151,7 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="card d-flex flex-row">
+            <div class="card cardA d-flex flex-row">
               <div><img src="assets/images/icon_boxformA.svg" /></div>
               <div class="card-body">
                 <div class="card-title">
@@ -170,7 +167,7 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="card d-flex flex-row">
+            <div class="card cardD d-flex flex-row">
               <div><img src="assets/images/icon_boxformD.svg" /></div>
               <div class="card-body">
                 <div class="card-title">
@@ -193,26 +190,32 @@
     <section id="partner" class="py-5">
       <div class="container py-5">
         <div class="row pb-5">
-          <div class="col-lg-9 offset-lg-2 text-center">
+          <div class="col-lg-9 mx-auto text-center">
             <h2>I nostri Partner!</h2>
             <p>Le<strong> migliori aziende</strong> con la quale collaboriamo e investiamo per il vostro futuro.</p>
           </div>
         </div>
         <div class="row g-4">
-          <div class="col-lg-4 px-lg-5 py-3 text-center">
-            <img class="pb-4 img-fluid" src="assets/images/logo_essegi.png" alt="" />
-            <h5>Essegi Domo</h5>
-            <p><small>Specialista della domotica e automazione industriale</small></p>
+          <div class="col-lg-4 text-center">
+            <div class="box p-4">
+              <img class="pb-4 img-fluid" src="assets/images/logo_essegi.png" alt="" />
+              <h5>Essegi Domo</h5>
+              <p><small>Specialista della domotica e automazione industriale</small></p>
+            </div>
           </div>
-          <div class="col-lg-4 px-lg-5 py-3 text-center">
-            <img class="pb-4 img-fluid" src="assets/images/logo_schneider.png" alt="" />
-            <h5>Schineider Electric</h5>
-            <p><small>Specialista globale nella gestione dell'energia e nell'automazione</small></p>
+          <div class="col-lg-4 text-center">
+            <div class="box p-4">
+              <img class="pb-4 img-fluid" src="assets/images/logo_schneider.png" alt="" />
+              <h5>Schineider Electric</h5>
+              <p><small>Specialista globale nella gestione dell'energia e nell'automazione</small></p>
+            </div>
           </div>
-          <div class="col-lg-4 px-lg-5 py-3 text-center">
-            <img class="pb-4 img-fluid" src="assets/images/logo_hoepli.gif" alt="" />
-            <h5>Hoepli</h5>
-            <p><small>La più grande libreria internazionale e tecnologica</small></p>
+          <div class="col-lg-4 text-center">
+            <div class="box p-4">
+              <img class="pb-4 img-fluid" src="assets/images/logo_hoepli.gif" alt="" />
+              <h5>Hoepli</h5>
+              <p><small>La più grande libreria internazionale e tecnologica</small></p>
+            </div>
           </div>
         </div>
       </div>
@@ -222,7 +225,7 @@
     <section id="soluzioni" class="py-5">
       <div class="container py-5">
         <div class="row">
-          <div class="col-lg-9 text-center offset-lg-2">
+          <div class="col-lg-9 text-center mx-auto">
             <h2>Soluzioni e Laboratori didattici</h2>
             <p class="">
               <strong> Mondo Scuola Lavoro</strong> con <a href="https://www.se.com">Schneider Electric</a> costruisce
@@ -234,7 +237,7 @@
         </div>
         <div class="row g-4 mt-2">
           <div class="col-lg-4">
-            <div class="card d-flex flex-row">
+            <div class="card cardH d-flex flex-row">
               <div><img src="assets/images/icon_boxsolH.svg" /></div>
               <div class="card-body">
                 <div class="card-title">
@@ -250,7 +253,7 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="card d-flex flex-row">
+            <div class="card cardA d-flex flex-row">
               <div><img src="assets/images/icon_boxsolA.svg" /></div>
               <div class="card-body">
                 <div class="card-title">
@@ -266,7 +269,7 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="card d-flex flex-row">
+            <div class="card cardD d-flex flex-row">
               <div><img src="assets/images/icon_boxsolD.svg" /></div>
               <div class="card-body">
                 <div class="card-title">
@@ -334,7 +337,7 @@
         </div>
       </div>
     </section>
-    <footer class="bg-black py-5">
+    <footer class="py-5 bg-black" >
       <div class="container py-5">
         <div class="row g-4">
           <div class="col-lg-4">
@@ -355,21 +358,19 @@
               <li class="mb-2">- <a class="text-white" href="#formazione"> Formazione</a></li>
               <li class="mb-4">- <a class="text-white" href="#soluzioni">Soluzioni e lab. Didattici</a></li>
               <li>
-                <a href="#" class="btn btn-success"> Contattaci </a>
-                <a href="#" class="text-white px-sm-2"> <i class="fa-brands fa-facebook fa-xl"></i></a>
-                <a href="#" class="text-white"> <i class="fa-brands fa-linkedin fa-xl"></i></a>
+                <a href="#contattaci" class="btn btn-success"> Contattaci </a>
+                <a href="#" class="text-white px-sm-2 btn-social"> <i class="fa-brands fa-facebook fa-xl"></i></a>
+                <a href="#" class="text-white btn-social"> <i class="fa-brands fa-linkedin fa-xl"></i></a>
               </li>
             </ul>
           </div>
           <div class="col-lg-4 text-center">
             <p class="text-white">Scarica il nostro catalogo</p>
-            <div class="d-inline-block position-relative text-start mt-5">
-              <img class="img-fluid" src="assets/images/catalogo_section_black.jpg" />
-              <a
-                href="#"
-                class="btn btn-success position-absolute top-0 start-50 translate-middle d-flex align-items-center"
+            <div class="d-inline-block position-relative mt-5">
+              <a href="#" class="btn btn-success btn-catalogo"
                 ><i class="fa-solid fa-download fa-2xl pe-2"></i>Scarica</a
               >
+              <img class="img-fluid" src="assets/images/catalogo_section_black.jpg" />
             </div>
           </div>
         </div>
@@ -380,18 +381,18 @@
 
     <section class="bg-black text-center pb-2">
       <div class="container">
-        <p class="text-white">
-           Copyright ©2021 Mondoscuolalavoro. All Rights Reserved. 
-        </p>
-       
+        <p class="text-white">Copyright ©2021 Mondoscuolalavoro. All Rights Reserved.</p>
       </div>
     </section>
-
+  <a href="#home" class="btn btn-success btn-scrool-to-up">
+    <i class="fas fa-arrow-up"></i>
+  </a>  
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

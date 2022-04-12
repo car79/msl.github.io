@@ -66,13 +66,22 @@ a:hover {
   color: var(--text-green);
 }
 .text-green {
-  color: var(--text-green);
+  color: var(--text-green) !important;
 }
 .text-blue {
-  color: var(--text-blue);
+  color: var(--text-blue) !important;
 }
 .text-yellow {
-  color: var(--text-yellow);
+  color: var(--text-yellow) !important;
+}
+.bg-black{
+  background-color: var(--bg-black) !important;
+}
+.bg-white{
+  background-color: var(--bg-white) !important;
+}
+.bg-green{
+  background-color: var(--bg-green) !important;
 }
 /********************** HEADER CSS *****************************/
 
@@ -143,10 +152,7 @@ a:hover {
 /* SECTION HOME */
 
 #home {
-  background: url("../images/bg-header.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: url("../images/bg-header.jpg") no-repeat center;
   min-height: 700px;
   padding-top: 6rem;
 }
@@ -159,6 +165,11 @@ a:hover {
   margin: auto;
 }
 
+/* SECTION CATALOGO */
+.btn-catalogo{
+  position: absolute;
+  transform: translateY(-20px) translateX(-20%);
+}
 /* SECTION FORMAZIONE */
 
 #formazione {
@@ -166,10 +177,22 @@ a:hover {
   background-size: cover;
   background-position: center;
 }
+
 .card {
   overflow: hidden;
   border-radius: 20px;
+  transition: .3s ease;
 }
+.cardH:hover {
+  border-color: var(--border-green);
+}
+.cardA:hover {
+  border-color: var(--border-blue);
+}
+.cardD:hover {
+  border-color: var(--border-yellow);
+}
+
 .card-body {
   padding: 1.5rem;
 }
@@ -180,6 +203,14 @@ a:hover {
 }
 
 /* SECTION PARTNER */
+#partner .box{
+border-radius: 20px;
+ transition: .3s ease;
+}
+
+#partner .box:hover{
+  box-shadow: 0px 0px 30px 10px #2424241c;
+}
 
 
 /* SECTION SOLUZIONI  */
@@ -197,4 +228,32 @@ a:hover {
 /*  FOOTER */
 footer .logo{
   width: 130px;
+}
+footer img{
+  width: 90%;
+}
+
+.btn-social{
+  transition: .3s ease;
+}
+.btn-social:hover{
+  color: var(--text-green) !important;
+}
+
+/* BUTTON UP */
+.btn-scrool-to-up{
+  position: fixed;
+  display: none; 
+  opacity: 0;
+  bottom: 20px;
+  right: 20px;
+  padding: 13px 20px;
+  border-radius: 100%;
+  background-color: var(--bg-green);
+  color: var(--text-white);
+  transition: opacity .3s ease;
+}
+.btn-scrool-to-up.show{
+  display: block; 
+  opacity: 1;
 }
