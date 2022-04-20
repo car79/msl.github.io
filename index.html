@@ -11,6 +11,8 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link href="assets/css/hover-min.css" rel="stylesheet" media="all" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,8 +25,8 @@
     <title>MondoScuolaLavoro</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light sticky-top ">
+    <header id="up">
+      <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="assets/images/logo.svg" />
@@ -43,7 +45,7 @@
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item mx-md-3">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
               </li>
               <li class="nav-item mx-md-3">
                 <a class="nav-link" href="#formazione">Formazione</a>
@@ -53,7 +55,7 @@
                 <a class="nav-link" href="#soluzioni">Soluzioni e lab. Didattici</a>
               </li>
             </ul>
-            <a href="#contattaci" class="btn btn-light fs-4">Contattaci</a>
+            <a href="#contattaci" class="btn btn-light">Contattaci</a>
           </div>
         </div>
       </nav>
@@ -64,9 +66,9 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-7">
-            <h1>Per i professionisti del <span class="text-white">Futuro</span></h1>
-            <h2 class="display-6 text-wrap">protagonisti del mondo del lavoro che cambia.</h2>
-            <a href="#contattaci" class="btn btn-danger mt-3 fs-4">Contattaci</a>
+            <h1 class="wow fadeInUp">Per i professionisti del <span class="text-white">Futuro</span></h1>
+            <h2 class="display-6 text-wrap wow fadeInUp">protagonisti del mondo del lavoro che cambia.</h2>
+            <a href="#contattaci" class="btn btn-danger mt-3 fs-4 wow fadeInUp hvr-float">Contattaci</a>
           </div>
         </div>
       </div>
@@ -76,8 +78,8 @@
     <section class="catalogo py-5">
       <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center text-center">
-          <h2 class="pe-lg-5 pb-lg-0 pb-5">Scarica il nostro <span class="text-green"> catalogo</span></h2>
-          <div class="d-inline-block position-relative">
+          <h2 class="pe-lg-5 pb-lg-0 pb-5 wow fadeInUp">Scarica il nostro <span class="text-green"> catalogo</span></h2>
+          <div class="d-inline-block position-relative wow fadeInUp">
             <a href="#" class="btn btn-success btn-catalogo"><i class="fa-solid fa-download fa-2xl pe-2"></i>Scarica</a>
             <img class="img-fluid" src="assets/images/catalogo_section_white.jpg" />
           </div>
@@ -92,13 +94,13 @@
           <div class="col-lg-6 text-center align-middle order-1 order-lg-0">
             <img src="assets/images/storie.jpg" class="img-fluid" />
             <br />
-            <a href="#contattaci" class="btn btn-danger mt-3 fs-4">
+            <a href="#contattaci" class="btn btn-danger mt-3 fs-4 hvr-float">
               <i class="fa-regular fa-play-circle pe-3 fa-xl"></i>Tg2 Storie</a
             >
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 wow fadeInUp">
             <h2>Chi siamo</h2>
-            <p >
+            <p>
               <strong> Mondo Scuola Lavoro</strong> da anni si propone come trait d’union tra il
               <strong>"mondo scolastico"</strong> ed il <strong>"mondo aziendale"</strong>. In partnership con aziende
               di vari settori si occupa nello specifico di contattare gli istituti scolastici, pubblici e privati, gli
@@ -106,7 +108,7 @@
               aziendali nazionali ed esteri, percorsi di ASL, (in azienda o c/o le scuole), progetti Erasmus, oltre che
               della formazione tecnica dei docenti.
             </p>
-            <p >
+            <p>
               Gli stage si avvalgono del supporto di nostri <strong>Tutors specializzat</strong>i e dell’utilizzo di
               soluzioni didattiche nell’ambito della gestione dell’energia e dell’automazione industriale e degli
               edifici. Le soluzioni didattiche utilizzate per gli stage sono progettate e realizzate su misura per le
@@ -124,8 +126,8 @@
       <div class="container py-5">
         <div class="row">
           <div class="col-lg-9 text-center mx-auto">
-            <h2>Formazione</h2>
-            <p class="">
+            <h2 class="wow fadeInUp">Formazione</h2>
+            <p class="wow fadeInUp">
               <strong> Mondo Scuola Lavoro</strong> in collaborazione con i suoi <a href="#partner">partner</a> opera,
               al fine di accompagnare le nuove generazioni nell'acquisizione e nella sperimentazione di quel saper
               tecnologico che la digitalizzazione e la connettività stanno sempre di più richiedendo al
@@ -135,7 +137,7 @@
         </div>
         <div class="row g-4 mt-2">
           <div class="col-lg-4">
-            <div class="card cardH d-flex flex-row">
+            <div class="card cardH d-flex flex-row wow fadeInLeft hvr-float">
               <div><img src="assets/images/icon_boxformH.svg" /></div>
               <div class="card-body">
                 <div class="card-title">
@@ -151,7 +153,7 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="card cardA d-flex flex-row">
+            <div class="card cardA d-flex flex-row wow fadeInUp hvr-float">
               <div><img src="assets/images/icon_boxformA.svg" /></div>
               <div class="card-body">
                 <div class="card-title">
@@ -167,7 +169,7 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="card cardD d-flex flex-row">
+            <div class="card cardD d-flex flex-row wow fadeInRight hvr-float">
               <div><img src="assets/images/icon_boxformD.svg" /></div>
               <div class="card-body">
                 <div class="card-title">
@@ -190,28 +192,28 @@
     <section id="partner" class="py-5">
       <div class="container py-5">
         <div class="row pb-5">
-          <div class="col-lg-9 mx-auto text-center">
+          <div class="col-lg-9 mx-auto text-center wow fadeInLeft">
             <h2>I nostri Partner!</h2>
             <p>Le<strong> migliori aziende</strong> con la quale collaboriamo e investiamo per il vostro futuro.</p>
           </div>
         </div>
         <div class="row g-4">
           <div class="col-lg-4 text-center">
-            <div class="box p-4">
+            <div class="box p-4 hvr-grow">
               <img class="pb-4 img-fluid" src="assets/images/logo_essegi.png" alt="" />
               <h5>Essegi Domo</h5>
               <p><small>Specialista della domotica e automazione industriale</small></p>
             </div>
           </div>
           <div class="col-lg-4 text-center">
-            <div class="box p-4">
+            <div class="box p-4 hvr-grow">
               <img class="pb-4 img-fluid" src="assets/images/logo_schneider.png" alt="" />
               <h5>Schineider Electric</h5>
               <p><small>Specialista globale nella gestione dell'energia e nell'automazione</small></p>
             </div>
           </div>
           <div class="col-lg-4 text-center">
-            <div class="box p-4">
+            <div class="box p-4 hvr-grow">
               <img class="pb-4 img-fluid" src="assets/images/logo_hoepli.gif" alt="" />
               <h5>Hoepli</h5>
               <p><small>La più grande libreria internazionale e tecnologica</small></p>
@@ -226,8 +228,8 @@
       <div class="container py-5">
         <div class="row">
           <div class="col-lg-9 text-center mx-auto">
-            <h2>Soluzioni e Laboratori didattici</h2>
-            <p class="">
+            <h2 class="wow fadeInUp">Soluzioni e Laboratori didattici</h2>
+            <p class="wow fadeInUp">
               <strong> Mondo Scuola Lavoro</strong> con <a href="https://www.se.com">Schneider Electric</a> costruisce
               soluzioni sidattiche su misura per le esigenze delle singole istituzioni scolastiche in linea con la
               piattaforma <strong>INDUSTRY 4.0</strong> quale riferimento tecnologico delle aziende manifatturiere
@@ -237,7 +239,7 @@
         </div>
         <div class="row g-4 mt-2">
           <div class="col-lg-4">
-            <div class="card cardH d-flex flex-row">
+            <div class="card cardH d-flex flex-row wow fadeInLeft hvr-float">
               <div><img src="assets/images/icon_boxsolH.svg" /></div>
               <div class="card-body">
                 <div class="card-title">
@@ -253,7 +255,7 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="card cardA d-flex flex-row">
+            <div class="card cardA d-flex flex-row wow fadeInUp hvr-float">
               <div><img src="assets/images/icon_boxsolA.svg" /></div>
               <div class="card-body">
                 <div class="card-title">
@@ -269,7 +271,7 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="card cardD d-flex flex-row">
+            <div class="card cardD d-flex flex-row wow fadeInRight hvr-float">
               <div><img src="assets/images/icon_boxsolD.svg" /></div>
               <div class="card-body">
                 <div class="card-title">
@@ -294,16 +296,16 @@
         <div class="row g-4">
           <div class="col-lg-6">
             <div class="d-flex flex-column h-100 justify-content-center">
-              <h2>Mettiti in contatto con noi</h2>
-              <p>Siamo lieti di rispondere e soffisfare tutte le vostre richieste.</p>
-              <div class="d-flex py-3 align-items-center">
+              <h2 class="wow fadeInUp">Mettiti in contatto con noi</h2>
+              <p class="wow fadeInUp">Siamo lieti di rispondere e soffisfare tutte le vostre richieste.</p>
+              <div class="d-flex py-3 align-items-center wow fadeInUp">
                 <i class="fas fa-phone fa-2x"></i>
                 <span class="ps-3 fs-4">
                   (+39) 095 2883256 <br />
                   <small class="text-muted fs-6">dal lunedì al venerdi 09:00 - 18:00</small></span
                 >
               </div>
-              <div class="d-flex pb-3">
+              <div class="d-flex pb-3 wow fadeInUp">
                 <i class="fa-solid fa-envelope fa-2x"></i>
                 <a href="mailto:info@mondoscuolalavoro.it" class="ps-3 fs-4">info@mondoscuolalavoro.it</a>
               </div>
@@ -337,12 +339,12 @@
         </div>
       </div>
     </section>
-    <footer class="py-5 bg-black" >
+    <footer class="pt-5 bg-black">
       <div class="container py-5">
         <div class="row g-4">
-          <div class="col-lg-4">
-            <img class="logo mb-3" src="assets/images/logo_white.svg" alt="" />
-            <p class="text-white">
+          <div class="col-lg-8">
+            <img class="logo mb-3 wow fadeInUp" src="assets/images/logo_white.svg" alt="" />
+            <p class="text-white wow fadeInUp">
               <strong> Mondo Scuola Lavoro</strong> da anni si propone come trait d’union tra il
               <strong>"mondo scolastico"</strong> ed il <strong>"mondo aziendale" </strong>. In partnership con aziende
               di vari settori si occupa nello specifico di contattare gli istituti scolastici, pubblici e privati, gli
@@ -351,20 +353,8 @@
               della formazione tecnica dei docenti.
             </p>
           </div>
-          <div class="col-lg-4">
-            <h2 class="text-white">Menu</h2>
-            <ul class="list-unstyled text-white fs-4">
-              <li class="mb-2">- <a class="text-white" href="#home">Home</a></li>
-              <li class="mb-2">- <a class="text-white" href="#formazione"> Formazione</a></li>
-              <li class="mb-4">- <a class="text-white" href="#soluzioni">Soluzioni e lab. Didattici</a></li>
-              <li>
-                <a href="#contattaci" class="btn btn-success"> Contattaci </a>
-                <a href="#" class="text-white px-sm-2 btn-social"> <i class="fa-brands fa-facebook fa-xl"></i></a>
-                <a href="#" class="text-white btn-social"> <i class="fa-brands fa-linkedin fa-xl"></i></a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-4 text-center">
+
+          <div class="col-lg-4 text-center wow fadeInUp">
             <p class="text-white">Scarica il nostro catalogo</p>
             <div class="d-inline-block position-relative mt-5">
               <a href="#" class="btn btn-success btn-catalogo"
@@ -375,24 +365,39 @@
           </div>
         </div>
       </div>
-    </footer>
-
-    <!--  COPYRIGHT -->
-
-    <section class="bg-black text-center pb-2">
-      <div class="container">
-        <p class="text-white">Copyright ©2021 Mondoscuolalavoro. All Rights Reserved.</p>
+      <div class="footer-menu text-center">
+        <ul class="nav wow fadeInUp justify-content-center">
+          <li class="nav-item"><a class="nav-link text-white" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#formazione"> Formazione</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#soluzioni">Soluzioni e lab. Didattici</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#contattaci">Contattaci</a></li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#"><i class="fa-brands fa-facebook fa-xl"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+          </li>
+          <!-- <li class="nav-item">
+            <a href="#contattaci" class="btn btn-success"> Contattaci </a>
+            <a href="#" class="text-white px-sm-2 btn-social"> <i class="fa-brands fa-facebook fa-xl"></i></a>
+            <a href="#" class="text-white btn-social"> <i class="fa-brands fa-linkedin fa-xl"></i></a>
+          </li> -->
+        </ul>
       </div>
-    </section>
-  <a href="#home" class="btn btn-success btn-scrool-to-up">
-    <i class="fas fa-arrow-up"></i>
-  </a>  
+      <div class="copyright text-center  py-2 mt-4 bg-green">
+        <span class="text-white">Copyright ©2021 Mondoscuolalavoro. All Rights Reserved.</span>
+      </div>
+    </footer>
+    <a href="#up" class="btn btn-success btn-scrool-to-up">
+      <i class="fas fa-arrow-up"></i>
+    </a>
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>

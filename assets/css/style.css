@@ -91,12 +91,11 @@ a:hover {
   left: 0;
   right: 0;
   z-index: 999;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
   background: transparent;
 }
+
 .navbar-nav {
-  background-color: var(--bg-green);
+  /* background-color: var(--bg-green); */
 }
 .navbar-toggler {
   color: var(--text-white) !important;
@@ -107,16 +106,22 @@ a:hover {
 .navbar .nav-link {
   color: var(--text-white) !important;
   font-size: 1.5rem;
+  font-weight: 400 !important;
+   -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
-.navbar .nav-link.active {
+.navbar .nav-link:hover{
+opacity: 0.5;
+}
+/*.navbar .nav-link.active {
   font-weight: 700 !important;
 }
-.navbar .nav-link.active::after {
+ .navbar .nav-link.active::after {
   content: "";
   display: block;
   height: 1px;
   border-bottom: 1px solid #fff;
-}
+} */
 .navbar-brand {
   width: 133px;
 }
@@ -131,12 +136,15 @@ a:hover {
   padding: 15px 50px;
 }
 .btn-light,
-.btn-light:hover,
 .btn-light:active,
 .btn-light:focus {
   color: var(--text-green);
   background-color: var(--text-white);
   border-color: var(--text-white);
+}
+.btn-light:hover{
+  background-color: rgba(255, 255, 255, 0) ;
+  color: var(--text-white);
 }
 .btn-success {
   background-color: var(--btn-success);
@@ -239,21 +247,24 @@ footer img{
 .btn-social:hover{
   color: var(--text-green) !important;
 }
+.copyright{
+  font-size: .7rem;
+}
 
 /* BUTTON UP */
 .btn-scrool-to-up{
   position: fixed;
-  display: none; 
+  display: block;
   opacity: 0;
-  bottom: 20px;
-  right: 20px;
+  bottom: 40px;
+  right: 40px;
   padding: 13px 20px;
   border-radius: 100%;
   background-color: var(--bg-green);
   color: var(--text-white);
-  transition: opacity .3s ease;
+  transition: .3s ease;
 }
 .btn-scrool-to-up.show{
-  display: block; 
+  display: block;
   opacity: 1;
 }
